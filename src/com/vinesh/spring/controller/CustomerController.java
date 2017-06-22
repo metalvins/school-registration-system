@@ -1,4 +1,4 @@
-package com.vinesh.springdemo.controller;
+package com.vinesh.spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

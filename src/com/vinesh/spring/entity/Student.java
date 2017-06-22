@@ -1,4 +1,4 @@
-package com.vinesh.springdemo.entity;
+package com.vinesh.spring.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

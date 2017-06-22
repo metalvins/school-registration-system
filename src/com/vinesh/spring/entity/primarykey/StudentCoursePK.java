@@ -1,4 +1,4 @@
-package com.vinesh.springdemo.entity.primarykey;
+package com.vinesh.spring.entity.primarykey;
 
 import java.io.Serializable;
 

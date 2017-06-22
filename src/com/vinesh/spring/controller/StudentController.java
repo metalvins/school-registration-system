@@ -1,4 +1,4 @@
-package com.vinesh.springdemo.controller;
+package com.vinesh.spring.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.vinesh.springdemo.dao.StudentDAO;
-import com.vinesh.springdemo.entity.Student;
+import com.vinesh.spring.dao.StudentDAO;
+import com.vinesh.spring.entity.Student;
 
 @Controller
 @RequestMapping("/student")

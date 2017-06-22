@@ -1,11 +1,11 @@
-package com.vinesh.springdemo.entity;
+package com.vinesh.spring.entity;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import com.vinesh.springdemo.entity.primarykey.StudentCoursePK;
+import com.vinesh.spring.entity.primarykey.StudentCoursePK;
 
 @Entity
 @Table(name="studentCourses")

@@ -1,8 +1,8 @@
-package com.vinesh.springdemo.dao;
+package com.vinesh.spring.dao;
 
 import java.util.List;
 
-import com.vinesh.springdemo.entity.Student;
+import com.vinesh.spring.entity.Student;
 
 public interface StudentDAO {
 	
