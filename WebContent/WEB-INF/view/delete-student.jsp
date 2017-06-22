@@ -9,7 +9,7 @@
 </head>
 <body>
 Please enter the ID for the Student.
-	<form:form action="getStudent" modelAttribute="student">
+	<form:form action="getDeleteStudent" modelAttribute="student">
 	ID: <form:input path="id" />
 	<input type="submit" value="Submit" />
 	</form:form>

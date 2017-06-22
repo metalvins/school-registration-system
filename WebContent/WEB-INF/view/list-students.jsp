@@ -23,6 +23,7 @@
 		<div id="content">
 			<table>
 				<tr>
+					<th>ID</th>
 					<th>First Name</th>
 					<th>Last Name</th>
 					<th>Email</th>
@@ -31,6 +32,7 @@
 				<c:forEach var = "student" items = "${students}" >
 				
 					<tr>
+						<td> ${student.id} </td>
 						<td> ${student.firstName} </td>
 						<td> ${student.lastName} </td>
 						<td> ${student.email} </td>
@@ -42,5 +44,7 @@
 		</div>
 	</div>
 
+<br><br><br>
+<a href="welcome"> Home </a>
 </body>
 </html>

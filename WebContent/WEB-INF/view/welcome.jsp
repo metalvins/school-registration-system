@@ -12,5 +12,11 @@ Welcome to the Student Registration System
 <a href="listALL"> List All Students </a>
 <br><br>
 <a href="findStudent"> Find Student</a>
+<br><br>
+<a href="addStudent"> Add Student</a>
+<br><br>
+<a href="updateStudent"> Update Student</a>
+<br><br>
+<a href="deleteStudent"> Delete Student</a>
 </body>
 </html>

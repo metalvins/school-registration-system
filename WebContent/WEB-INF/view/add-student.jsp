@@ -9,11 +9,16 @@
 </head>
 <body>
 Please enter the ID for the Student.
-	<form:form action="getStudent" modelAttribute="student">
-	ID: <form:input path="id" />
+	<form:form action="getAddStudent" modelAttribute="student">
+	First Name: <form:input path="firstName" />
+	<br><br>
+	Last Name: <form:input path="lastName" />
+	<br><br>
+	Email: <form:input path="email" />
+	<br><br>
 	<input type="submit" value="Submit" />
 	</form:form>
-	
+
 <br><br><br>
 <a href="welcome"> Home </a>
 </body>

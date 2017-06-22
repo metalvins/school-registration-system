@@ -13,5 +13,7 @@ Name:${student.firstName} ${student.lastName}
 <br><br>
 Email:${student.email}
 
+<br><br><br>
+<a href="welcome"> Home </a>
 </body>
 </html>
