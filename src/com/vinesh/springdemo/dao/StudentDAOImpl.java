@@ -34,4 +34,15 @@ public class StudentDAOImpl implements StudentDAO {
 		return students;
 	}
 
+	@Override
+	@Transactional
+	public Student getStudent(int id) {
+		// Get current Session
+		Session s = sf.getCurrentSession();
+		
+		//Get Student by ID
+		Student student = (Student) s.get(Student.class, id);
+		return student;
+	}
+
 }
