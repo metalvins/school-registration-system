@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>List Customers</title>
+<title>Show Registration</title>
 </head>
 <body>
-Coming soon...
+Student ID:${studentCourse.pk.studentID} registered for Course:${studentCourse.pk.course_name}
+<br><br><br>
+<a href="welcome"> Home </a>
 </body>
 </html>

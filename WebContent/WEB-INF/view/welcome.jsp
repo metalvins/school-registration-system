@@ -9,14 +9,43 @@
 <body>
 Welcome to the Student Registration System
 <br><br>
-<a href="listALL"> List All Students </a>
+<input type = "button" value = "List All Students"
+	onclick="window.location.href='listAllStudents'; return false;" />
+
+<input type = "button" value = "Find Student"
+	onclick="window.location.href='findStudent'; return false;" />
+
+<input type = "button" value = "Add Student"
+	onclick="window.location.href='addStudent'; return false;" />
+
+<input type = "button" value = "Update Student"
+	onclick="window.location.href='updateStudent'; return false;" />
+
+<input type = "button" value = "Delete Student"
+	onclick="window.location.href='deleteStudent'; return false;" />
+
 <br><br>
-<a href="findStudent"> Find Student</a>
+
+<input type = "button" value = "List All Courses"
+	onclick="window.location.href='listAllCourses'; return false;" />
+
+<input type = "button" value = "Find Course"
+	onclick="window.location.href='findCourse'; return false;" />
+
+<input type = "button" value = "Add Course"
+	onclick="window.location.href='addCourse'; return false;" />
+
+<input type = "button" value = "Update Course"
+	onclick="window.location.href='updateCourse'; return false;" />
+
+<input type = "button" value = "Delete Course"
+	onclick="window.location.href='deleteCourse'; return false;" />
+
 <br><br>
-<a href="addStudent"> Add Student</a>
+
+<input type = "button" value = "Register Student for Course"
+	onclick="window.location.href='registerStudentForCourse'; return false;" />
+
 <br><br>
-<a href="updateStudent"> Update Student</a>
-<br><br>
-<a href="deleteStudent"> Delete Student</a>
 </body>
 </html>

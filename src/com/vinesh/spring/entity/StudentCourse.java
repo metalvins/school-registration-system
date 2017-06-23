@@ -9,7 +9,7 @@ import com.vinesh.spring.entity.primarykey.StudentCoursePK;
 
 @Entity
 @Table(name="studentCourses")
-public class StudentCourses {
+public class StudentCourse {
 	
 	@EmbeddedId
 	private StudentCoursePK pk;
@@ -17,7 +17,11 @@ public class StudentCourses {
 	@Column(name="registered_date")
 	private String regDate;
 
-	public StudentCourses() {
+	public StudentCourse() {
+	}
+
+	public StudentCourse(StudentCoursePK studentCoursePK) {
+		this.pk = studentCoursePK;
 	}
 
 	public StudentCoursePK getPk() {

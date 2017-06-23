@@ -18,7 +18,6 @@ public class StudentDAOImpl implements StudentDAO {
 	private SessionFactory sf;
 	
 	@Override
-	@Transactional
 	public List<Student> getStudents() {
 		
 		// Get current Session
@@ -41,7 +40,7 @@ public class StudentDAOImpl implements StudentDAO {
 		Session s = sf.getCurrentSession();
 		
 		//Get Student by ID
-		Student student = (Student) s.get(Student.class, id);
+		Student student = s.get(Student.class, id);
 		return student;
 	}
 

@@ -5,20 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Add Student</title>
+<title>Find Student</title>
 </head>
 <body>
 Please enter the ID for the Student.
-	<form:form action="getAddStudent" modelAttribute="student">
-	First Name: <form:input path="firstName" />
-	<br><br>
-	Last Name: <form:input path="lastName" />
-	<br><br>
-	Email: <form:input path="email" />
-	<br><br>
+	<form:form action="getCourse" modelAttribute="course">
+	ID: <form:input path="courseName" />
 	<input type="submit" value="Submit" />
 	</form:form>
-
+	
 <br><br><br>
 <a href="welcome"> Home </a>
 </body>
