@@ -7,3 +7,4 @@ Through the welcome page, we can see a list of courses that a student is enrolle
 Additionally, we can see a list of students that are enrolled in a particular course.
 
 The SQL tables are created using the script in: 
+WebContent/resources/createTables.sql
