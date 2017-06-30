@@ -10,3 +10,11 @@ Additionally, we can see a list of students that are enrolled in a particular co
 
 The SQL tables are created using the script in: 
 WebContent/resources/createTables.sql
+
+The project is implemented using Spring MVC and hibernate.
+
+A student controller recieves all incoming HTTP requests and delegates the functions to a service called StudentRegistrationService.
+
+This service interacts with various DAOs to create/read/update/delete data from the database
+
+The DAOs use hibernate libraries to talk to the mysql database in the backend.
