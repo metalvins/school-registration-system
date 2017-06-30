@@ -20,5 +20,3 @@ Please enter the Student ID:
 <a href="welcome"> Home </a>
 </body>
 </html>
-</body>
-</html>

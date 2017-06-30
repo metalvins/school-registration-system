@@ -20,5 +20,3 @@ Please enter the Course Name:
 <a href="welcome"> Home </a>
 </body>
 </html>
-</body>
-</html>

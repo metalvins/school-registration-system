@@ -18,4 +18,4 @@ Please enter the details:
 	<input type="submit" value="Submit" />
 	</form:form>
 </body>
-</html>
+</html> 
