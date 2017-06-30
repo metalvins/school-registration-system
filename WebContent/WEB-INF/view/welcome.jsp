@@ -46,6 +46,9 @@ Welcome to the Student Registration System
 <input type = "button" value = "Register Student for Course"
 	onclick="window.location.href='registerStudentForCourse'; return false;" />
 
+<input type = "button" value = "Drop Student from Course"
+	onclick="window.location.href='dropStudentFromCourse'; return false;" />
+
 <br><br>
 
 <input type = "button" value = "Show Courses for Student"

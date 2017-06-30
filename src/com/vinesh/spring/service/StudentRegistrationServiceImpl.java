@@ -114,4 +114,10 @@ public class StudentRegistrationServiceImpl implements StudentRegistrationServic
 		return courses;
 	}
 
+	@Override
+	@Transactional
+	public StudentCourse dropStudent(StudentCourse sc) {
+		return studentCourseDAO.dropStudent(sc);
+	}
+
 }

@@ -165,6 +165,14 @@ public class SystemController {
 		return "register-student-for-course";
 	}
 	
+	@RequestMapping("/dropStudentFromCourse")
+	public String dropStudentfromCourse(Model m) {
+		
+		m.addAttribute("studentCourse", new StudentCourse(new StudentCoursePK()));
+		
+		return "drop-student-for-course";
+	}
+	
 	@RequestMapping("/registerCourse")
 	public String registerCourse(@ModelAttribute("studentCourse") StudentCourse sc, Model m) {
 		System.out.println("Registering student ID:" + sc.getPk().getStudentID() +
@@ -173,6 +181,13 @@ public class SystemController {
 		return "show-registration";
 	}
 	
+	@RequestMapping("/dropCourse")
+	public String dropCourse(@ModelAttribute("studentCourse") StudentCourse sc, Model m) {
+		System.out.println("Dropping student ID:" + sc.getPk().getStudentID() +
+						   " from course:" + sc.getPk().getCourse_name());
+		m.addAttribute("studentCourse", srs.dropStudent(sc));
+		return "show-drop";
+	}
 	@RequestMapping("/showStudentsForCourse")
 	public String viewStudentsForCourse(Model m) {
 		

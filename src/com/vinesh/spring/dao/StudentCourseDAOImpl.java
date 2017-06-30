@@ -38,5 +38,11 @@ public class StudentCourseDAOImpl implements StudentCourseDAO {
 		
 		return q.getResultList();
 	}
+	@Override
+	public StudentCourse dropStudent(StudentCourse sc) {
+		Session s = sf.getCurrentSession();
+		s.delete(sc);
+		return sc;
+	}
 
 }

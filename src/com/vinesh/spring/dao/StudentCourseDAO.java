@@ -11,4 +11,6 @@ public interface StudentCourseDAO {
 	public List<StudentCourse> getStudentIDs(String courseName);
 
 	public List<StudentCourse> getCourseNames(int id);
+
+	public StudentCourse dropStudent(StudentCourse sc);
 }

@@ -34,4 +34,6 @@ public interface StudentRegistrationService {
 
 	public List<Course> getCoursesForStudent(int id);
 
+	public StudentCourse dropStudent(StudentCourse sc);
+
 }
