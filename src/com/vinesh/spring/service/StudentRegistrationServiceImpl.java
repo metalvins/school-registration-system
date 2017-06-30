@@ -1,5 +1,6 @@
 package com.vinesh.spring.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,8 @@ public class StudentRegistrationServiceImpl implements StudentRegistrationServic
 	@Autowired
 	private CourseDAO courseDAO;
 	
-	@Autowired StudentCourseDAO studentCourseDAO;
+	@Autowired
+	private StudentCourseDAO studentCourseDAO;
 	
 	@Override
 	@Transactional
@@ -88,6 +90,28 @@ public class StudentRegistrationServiceImpl implements StudentRegistrationServic
 	@Transactional
 	public StudentCourse registerStudent(StudentCourse sc) {
 		return studentCourseDAO.registerStudent(sc);
+	}
+
+	@Override
+	@Transactional
+	public List<Student> getStudentsForCourse(String courseName) {
+		List<Student> students = new ArrayList<Student>();
+		List<StudentCourse> studentIDs = studentCourseDAO.getStudentIDs(courseName);
+		for(StudentCourse id: studentIDs) {
+			students.add(studentDAO.getStudent(id.getPk().getStudentID()));
+		}
+		return students;
+	}
+
+	@Override
+	@Transactional
+	public List<Course> getCoursesForStudent(int id) {
+		List<Course> courses = new ArrayList<Course>();
+		List<StudentCourse> courseNames = studentCourseDAO.getCourseNames(id);
+		for(StudentCourse course: courseNames) {
+			courses.add(courseDAO.getCourse(course.getPk().getCourse_name()));
+		}
+		return courses;
 	}
 
 }

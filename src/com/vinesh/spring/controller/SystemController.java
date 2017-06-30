@@ -172,4 +172,42 @@ public class SystemController {
 		m.addAttribute("studentCourse", srs.registerStudent(sc));
 		return "show-registration";
 	}
+	
+	@RequestMapping("/showStudentsForCourse")
+	public String viewStudentsForCourse(Model m) {
+		
+		m.addAttribute("course", new Course());
+		
+		return "show-students-for-course";
+	}
+	
+	@RequestMapping("/studentsForCourse")
+	public String studentsForCourse(@ModelAttribute("course") Course c, Model m) {
+		
+		List<Student> students = srs.getStudentsForCourse(c.getCourseName());
+		
+		m.addAttribute("students", students);
+		
+		return "list-students";
+		
+	}
+	
+	@RequestMapping("/showCoursesForStudent")
+	public String viewCoursesForStudent(Model m) {
+		
+		m.addAttribute("student", new Student());
+		
+		return "show-courses-for-student";
+	}
+	
+	@RequestMapping("/coursesForStudent")
+	public String coursesForStudent(@ModelAttribute("student") Student s, Model m) {
+		
+		List<Course> courses = srs.getCoursesForStudent(s.getId());
+		
+		m.addAttribute("courses", courses);
+		
+		return "list-courses";
+		
+	}
 }

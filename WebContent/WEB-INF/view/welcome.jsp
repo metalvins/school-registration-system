@@ -47,5 +47,15 @@ Welcome to the Student Registration System
 	onclick="window.location.href='registerStudentForCourse'; return false;" />
 
 <br><br>
+
+<input type = "button" value = "Show Courses for Student"
+	onclick="window.location.href='showCoursesForStudent'; return false;" />
+
+<br><br>
+
+<input type = "button" value = "Show Students for Course"
+	onclick="window.location.href='showStudentsForCourse'; return false;" />
+
+<br><br>
 </body>
 </html>

@@ -30,4 +30,8 @@ public interface StudentRegistrationService {
 
 	public StudentCourse registerStudent(StudentCourse sc);
 
+	public List<Student> getStudentsForCourse(String courseName);
+
+	public List<Course> getCoursesForStudent(int id);
+
 }
